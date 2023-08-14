@@ -139,11 +139,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       localStorage.setItem("userFormData", JSON.stringify(userFormData));
 
-      var storedSummaryData = JSON.parse(localStorage.getItem("summaryData")) || {};
-      var isValidSummaryTable = storedSummaryData.summaryDate && storedSummaryData.summaryTime &&
-                               storedSummaryData.summaryDuration && storedSummaryData.summaryTotal;
-
-      return isValidSummaryTable;
+      return true;
     } else {
       return false;
     }

@@ -104,6 +104,9 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("foreignerAdult").addEventListener("input", updateSummary);
   document.getElementById("foreignerChild").addEventListener("input", updateSummary);
   document.getElementById("infant").addEventListener("input", updateSummary);
+  document.getElementById("continueBut").addEventListener("click", function() {
+    window.location.href = "Details.html"; // Replace with the correct path to your Details.html file
+  });
 
   const incrementButtons = document.querySelectorAll(".increment");
   const decrementButtons = document.querySelectorAll(".decrement");
